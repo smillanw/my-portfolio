@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="index.html">Smilla Nordgren Wahlström</a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="portfolio.html">Projects</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><a href="index.html">Smilla Nordgren Wahlström</a></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="portfolio.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#About" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/snw (kopia).png" alt="text s n w cirkel" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Smilla</h1>
+        <p class="section__text__p2">Digital design student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='portfolio.html'"
+          >
+            My work
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="assets/insta.svg"
+            alt="My instagram profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/smillawahlstrom/'"
+          />
+          <img
+            src="assets/linkedin.svg"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://se.linkedin.com/in/smilla-nordgren-wahlstr%C3%B6m-4b035a253'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="About">
+      <p class="section__text__p1">Get to know more</p>
+      <h1 class="title">About me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="assets/IMG_1387 2.jpeg"
+            alt="profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              Hej här står det lite text om mig angående vad jag har för
+              erfarenheter och så! Och här kommer en lite mer ingående text om
+              fler kunskaper jag besitter. Då vet ni!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Contact">
+      <p class="section__text__p1">Get in touch with me</p>
+      <h1 class="title">Contact me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="assets/email-icon.webp"
+            alt="email icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:smilla.nordgren@gmail.com"
+              >smilla.nordgren@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="assets/linkedin.svg"
+            alt="linkedin icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://se.linkedin.com/in/smilla-nordgren-wahlstr%C3%B6m-4b035a253"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Smilla Nordgren Wahlström</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
